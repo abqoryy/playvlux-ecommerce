@@ -22,9 +22,30 @@ img {
 }
 
 header {
-    background-color: #000000;
+    background: linear-gradient(
+        120deg,
+        #000000,
+        #100416,
+        #000000,
+        #12001f
+  );
+    background-size: 400% 400%;
+    animation: darkGradient 12s ease infinite;
     height: 100vh;
 }
+
+@keyframes darkGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 /* NAV SECTION */
 
@@ -120,15 +141,16 @@ nav a:not(.logo) {
     font-weight: 200;
     line-height: 1.8;
     letter-spacing: 1.2px;
+    max-width: 450px;
     opacity: 80%;
     
 }
 
 .hero-button button{
-    padding: 15px 40px;
+    padding: 15px 50px;
     font-size: 17px;
     font-family: 'Nunito Sans', sans-serif;
-    border-radius: 25px;
+    border-radius: 50px;
     margin-right: 10px;
     background-color: var(--orange);
     
