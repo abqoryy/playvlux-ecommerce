@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 button {
     border: none;
 }
@@ -25,7 +29,7 @@ header {
     background: linear-gradient(
         120deg,
         #000000,
-        #100416,
+        #1a0f1f,
         #000000,
         #12001f
   );
@@ -61,6 +65,10 @@ nav {
     
 }
 
+.nav-list {
+    display: flex;
+}
+
 nav a, i, button{
     cursor: pointer;
 }
@@ -78,17 +86,24 @@ nav a:not(.logo) {
     letter-spacing: 1.5px;
 }
 
+#cart {
+    display: none;
+}
+
 .nav-button {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
+/* i font for cart and menu icon */
+
 .nav-button i {
     /* karna ini font jadi pake font size */
     color: #fff;
     font-size: 30px;
 }
+
 
 .nav-button .signup, .login {
     padding: 10px 20px;
@@ -105,6 +120,10 @@ nav a:not(.logo) {
     margin: 0px 5px 0px 20px;
 }
 
+#menu-icon{
+    display: none;
+}
+
 
 /* HERO SECTION */
 
@@ -117,7 +136,7 @@ nav a:not(.logo) {
 
 .hero-left {
     flex: 1;
-    padding-left: 100px;
+    padding: 0 20px 0 100px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -137,11 +156,11 @@ nav a:not(.logo) {
 .hero-left .hero-p {
     color: #fff;
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
     line-height: 1.8;
     letter-spacing: 1.2px;
-    max-width: 450px;
+    max-width: 420px;
     opacity: 80%;
     
 }
@@ -163,19 +182,16 @@ nav a:not(.logo) {
 }
 
 .hero-right {
-    flex: 1.2;
+    flex: 1;
     height: 100%;
-    width: 50vw;
-    
-    /* outline: 1px solid red; */
+    width: 100%;
+   
 
 }
 
 .hero-right img {
-    /* width: 100%; */
-    width: clamp(700px, 100%, 100%);
+    width: clamp(100%, 100%, 600px);
     height: 100%;
-    
 }
 
 

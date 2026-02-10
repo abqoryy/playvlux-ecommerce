@@ -1,3 +1,98 @@
-@media (max-width: 2000px) and (min-width: 1600px) {
- 
+@media (max-width: 3000px) and (min-width: 2700px) {
+    
+    .hero-right img {
+        object-fit: contain;
+    }
+
+}
+
+
+@media (max-width: 2000px) and (min-width: 1801px) {
+
+    nav {
+        padding: 0 80px;
+    }
+
+    .hero-left {
+        padding: 0 20px 0 150px;
+    }
+
+}
+
+/* starting to transitions for mobile responsive */
+@media (max-width: 1300px) {
+    .hero-left {
+        padding: 60px;
+    }
+    .hero-left .hero-p {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .hero-left {
+        padding: 40px;
+    }
+
+
+    .hero-left .hero-title {
+        font-size: 60px;
+        line-height: none;
+        letter-spacing: none;
+    }
+
+    .hero-left .hero-p {
+        font-size: 15px;
+        max-width: 380px;
+        margin-bottom: 20px;
+    }
+
+    .hero-button button {
+        padding: 10px 35px;
+        font-size: 15px;
+    }
+
+    #cart {
+        display: block;
+    }
+
+    #cart-icon {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .nav-list {
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        padding: 50px;
+        gap: 30px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: -100%;
+        flex-direction: column;
+        align-items: end;
+        backdrop-filter: blur(30px);
+        transition: all .5s ease-in-out;
+
+    }
+
+    .nav-list a {
+        font-size: 30px;
+        width: auto;
+    }
+  
+    .nav-list.open {
+        right: 0;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
 }
