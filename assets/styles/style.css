@@ -15,6 +15,7 @@
 
 body {
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 button {
@@ -29,7 +30,7 @@ header {
     background: linear-gradient(
         120deg,
         #000000,
-        #1a0f1f,
+        #240c24,
         #000000,
         #12001f
   );
@@ -54,6 +55,8 @@ header {
 /* NAV SECTION */
 
 nav {
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,7 +89,7 @@ nav a:not(.logo) {
     letter-spacing: 1.5px;
 }
 
-#cart {
+#cart, #login-li {
     display: none;
 }
 
@@ -131,7 +134,12 @@ nav a:not(.logo) {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     height: calc(100vh - 100px);
+}
+
+.hero-section .blur-line {
+    display: none;
 }
 
 .hero-left {

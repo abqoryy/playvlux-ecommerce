@@ -1,3 +1,4 @@
-import { toggleMenu } from "./home.mjs";
+import {toggleMenu} from "./home.mjs";
 
 toggleMenu();
+
