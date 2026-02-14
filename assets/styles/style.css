@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap');
+
 :root {
     --orange: #FF7700;
 }
@@ -20,10 +21,6 @@ body {
 
 button {
     border: none;
-}
-
-img {
-    object-fit: cover;
 }
 
 header {
@@ -132,8 +129,8 @@ nav a:not(.logo) {
 
 .hero-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
     position: relative;
     height: calc(100vh - 100px);
 }
@@ -143,11 +140,14 @@ nav a:not(.logo) {
 }
 
 .hero-left {
-    flex: 1;
-    padding: 0 20px 0 100px;
+    height: 100%;
+    width: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 30px;
+    padding: 50px;
+    
     /* outline: 1px solid red; */
 }
 
@@ -157,13 +157,14 @@ nav a:not(.logo) {
     font-weight: 800;
     line-height: .85;
     letter-spacing: -3px;
+    margin-bottom: 30px;
 
     /* outline: 1px red solid; */
 }
 
 .hero-left .hero-p {
     color: #fff;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     font-size: 18px;
     font-weight: 200;
     line-height: 1.8;
@@ -171,10 +172,13 @@ nav a:not(.logo) {
     max-width: 420px;
     opacity: 80%;
     
+    /* outline: 1px solid red; */
+    
 }
 
 .hero-button button{
-    padding: 15px 50px;
+    width: 170px;
+    height: 55px;
     font-size: 17px;
     font-family: 'Nunito Sans', sans-serif;
     border-radius: 50px;
@@ -190,16 +194,18 @@ nav a:not(.logo) {
 }
 
 .hero-right {
-    flex: 1;
+    display: flex;
     height: 100%;
-    width: 100%;
-   
-
+    align-items: flex-end;
+    /* clammp heerebefibsad */
+    /* outline: 1px solid red; */
 }
 
 .hero-right img {
-    width: clamp(100%, 100%, 600px);
-    height: 100%;
+
+    object-fit: cover;
+    width: 100%;
+    height: clamp(300px, 100%, 700px); 
 }
 
 
