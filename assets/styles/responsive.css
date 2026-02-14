@@ -31,3 +31,56 @@
 }
 
 /* AFTER THIS WILL TRANSTIONS TO MOBILE PORTRAIT LAYOUT */
+
+@media (max-width: 920px) {
+    /* DONT FORGET TO MAKE THE LOGO IN THE MIDDLE, 
+    REDUCE FONT SIZE OF NAV, LOGO ALSO. NOTED THAT THE BUTGER LIST IS STILL NOT GOOD
+    INTERFERE AND OVERFLOWING EACH OTHER */
+    
+    header {
+        overflow-x: hidden;
+        height: 100%;
+    }
+    
+    #cart-icon {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: 40px;
+        z-index: 100;
+    }
+
+    .nav-list {
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        
+        gap: 30px;
+        transition: .4s ease-in-out;
+        padding: 0 50px;
+
+        z-index: 99;
+        backdrop-filter: blur(25px);
+    }
+
+    .nav-list a {
+        font-size: 30px;
+        font-weight: 200;
+    }
+
+    .nav-list.active {
+        right: 0;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
+}
