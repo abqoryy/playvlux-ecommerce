@@ -33,35 +33,59 @@
 /* AFTER THIS WILL TRANSTIONS TO MOBILE PORTRAIT LAYOUT */
 
 @media (max-width: 920px) {
-    /* DONT FORGET TO MAKE THE LOGO IN THE MIDDLE, 
-    REDUCE FONT SIZE OF NAV, LOGO ALSO. NOTED THAT THE BUTGER LIST IS STILL NOT GOOD
-    INTERFERE AND OVERFLOWING EACH OTHER */
+    /* THE LOGO IS NOT CENTERED YET, FIX THIS LATER, NOT IMPORTANT RN */
     
     header {
         overflow-x: hidden;
         height: 100%;
+        /* kalo dia 100vh scroll bar jadi dobel */
     }
-    
+
+    nav {
+        padding: 70px 40px;
+    }
+
     #cart-icon {
         display: none;
     }
 
-    #menu-icon {
-        display: block;
-        font-size: 40px;
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        gap: 30px;
         z-index: 100;
+        
     }
+
+    .menu-icon #menu-icon {
+        font-size: 40px;
+        
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #cart, #login-li {
+        display: block;
+    }
+
+    
+    .login {
+        display: none;
+    }
+
 
     .nav-list {
         position: absolute;
         width: 50%;
         height: 100vh;
         top: 0;
-        right: -100%;
+        left: -100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-start;
         
         gap: 30px;
         transition: .4s ease-in-out;
@@ -77,10 +101,63 @@
     }
 
     .nav-list.active {
-        right: 0;
+        left: 0;
     }
 
     .no-scroll {
         overflow: hidden;
+    }
+
+    /* HERO SECTION WILL HORIZONTALLY ORIENTED */
+
+    .hero-section {
+        height: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+
+        /* outline: 1px solid red; */
+    }
+    
+    .hero-right {
+        width: 100%;
+        /* outline: 1px solid red; */
+        
+    }
+
+    .hero-right img {
+        height: 100%;
+    }
+
+    .hero-left {
+        width: 100%;
+        /* outline: 1px solid red; */
+    }
+
+    .hero-left .mobile-container{
+        display: flex;
+        width: 100%;
+        padding: 50px 0px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 530px) {
+    .menu-icon {
+        gap: 15px;
+
+    }
+
+    .menu-icon #menu-icon, .logo-menu { 
+        font-size: 20px;
+    }
+
+    .nav-button .signup {
+        padding: 7px 15px;
+        font-size: 10px;
     }
 }

@@ -53,7 +53,7 @@ header {
 
 nav {
     position: relative;
-
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,20 +67,20 @@ nav {
 
 .nav-list {
     display: flex;
+    gap: 50px;
 }
 
 nav a, i, button{
     cursor: pointer;
 }
 
-.logo {
+.logo, .logo-menu{
     font-size: 30px;
     font-weight: 800;
     color: var(--orange);
 }
 
-nav a:not(.logo) {
-    margin-left: 50px;
+nav a:not(.logo, .logo-menu) {
     opacity: 60%;
     color: #fff;
     letter-spacing: 1.5px;
@@ -98,7 +98,7 @@ nav a:not(.logo) {
 
 /* i font for cart and menu icon */
 
-.nav-button i {
+.nav-button i, .menu-icon{
     /* karna ini font jadi pake font size */
     color: #fff;
     font-size: 30px;
@@ -120,7 +120,7 @@ nav a:not(.logo) {
     margin: 0px 5px 0px 20px;
 }
 
-#menu-icon{
+.menu-icon{
     display: none;
 }
 
@@ -129,7 +129,7 @@ nav a:not(.logo) {
 
 .hero-section {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
     align-items: flex-end;
     position: relative;
     height: calc(100vh - 100px);
@@ -145,8 +145,6 @@ nav a:not(.logo) {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 50px;
     
     /* outline: 1px solid red; */
 }
@@ -176,13 +174,17 @@ nav a:not(.logo) {
     
 }
 
+.hero-button {
+    display: flex;
+    gap: 10px;
+}
+
 .hero-button button{
     width: 170px;
     height: 55px;
     font-size: 17px;
     font-family: 'Nunito Sans', sans-serif;
     border-radius: 50px;
-    margin-right: 10px;
     background-color: var(--orange);
     
 }
