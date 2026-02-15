@@ -42,7 +42,8 @@
     }
 
     nav {
-        padding: 70px 40px;
+        height: auto;
+        padding: 30px;
     }
 
     #cart-icon {
@@ -84,12 +85,12 @@
         left: -100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         
         gap: 30px;
         transition: .4s ease-in-out;
-        padding: 0 50px;
+        padding: 150px 50px 0px;
 
         z-index: 99;
         backdrop-filter: blur(25px);
@@ -147,6 +148,20 @@
 
 
 @media (max-width: 530px) {
+
+    nav{
+        padding: 20px;
+    }
+
+    .nav-list {
+        width: 80%;
+        gap: 20px;
+    }
+
+    .nav-list a{
+        font-size: 20px;
+    }
+
     .menu-icon {
         gap: 15px;
 
@@ -158,6 +173,25 @@
 
     .nav-button .signup {
         padding: 7px 15px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero-left {
+        padding: 0 20px;
+    }
+    .hero-left .hero-title {
+        font-size: 45px;
+        
+    }
+    .hero-left .hero-p {
+        font-size: 12px;
+        
+    }
+    .hero-button button {
+        width: 100px;
+        height: 35px;
         font-size: 10px;
     }
 }

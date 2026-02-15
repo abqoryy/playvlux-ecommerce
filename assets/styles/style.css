@@ -195,6 +195,10 @@ nav a:not(.logo, .logo-menu) {
     border: 1px solid #fff;
 }
 
+.signup .shopnow {
+    color: #000;
+}
+
 .hero-right {
     display: flex;
     height: 100%;
