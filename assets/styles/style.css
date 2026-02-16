@@ -67,6 +67,10 @@ nav {
 
 .nav-list {
     display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    width: 100%;
     gap: 50px;
 }
 
@@ -74,13 +78,13 @@ nav a, i, button{
     cursor: pointer;
 }
 
-.logo, .logo-menu{
+.logo {
     font-size: 30px;
     font-weight: 800;
     color: var(--orange);
 }
 
-nav a:not(.logo, .logo-menu) {
+nav a:not(.logo) {
     opacity: 60%;
     color: #fff;
     letter-spacing: 1.5px;
@@ -98,7 +102,7 @@ nav a:not(.logo, .logo-menu) {
 
 /* i font for cart and menu icon */
 
-.nav-button i, .menu-icon{
+.nav-button i, #menu-icon{
     /* karna ini font jadi pake font size */
     color: #fff;
     font-size: 30px;
@@ -120,7 +124,7 @@ nav a:not(.logo, .logo-menu) {
     margin: 0px 5px 0px 20px;
 }
 
-.menu-icon{
+#menu-icon{
     display: none;
 }
 
@@ -155,14 +159,14 @@ nav a:not(.logo, .logo-menu) {
     font-weight: 800;
     line-height: .85;
     letter-spacing: -3px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     /* outline: 1px red solid; */
 }
 
 .hero-left .hero-p {
     color: #fff;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     font-size: 18px;
     font-weight: 200;
     line-height: 1.8;
@@ -215,3 +219,23 @@ nav a:not(.logo, .logo-menu) {
 }
 
 
+/* MAIN SECTION */
+
+main {
+    width: 100%;
+
+    padding: 50px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+
+    gap: 50px;
+    outline: 1px solid red;
+}
+
+.card {
+    padding: 100px 20px;
+    border: 1px solid black;
+}
