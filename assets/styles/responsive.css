@@ -183,11 +183,39 @@
     }
     .hero-left .hero-title {
         font-size: 45px;
+        margin-bottom: 20px;
         
     }
     .hero-left .hero-p {
         font-size: 12px;
+        margin-bottom: 40px;
         
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .menu-icon {
+        gap: 10px;
+    }
+
+    .menu-icon #menu-icon, .logo-menu {
+        font-size: 15px;
+    }
+
+    .nav-button .signup{
+        padding: 7px 12px;
+        font-size: 8px;
+    }
+
+    .hero-left .hero-title {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    .hero-left .hero-p {
+        font-size: 10px;
+        margin-bottom: 30px;
     }
     .hero-button button {
         width: 100px;
