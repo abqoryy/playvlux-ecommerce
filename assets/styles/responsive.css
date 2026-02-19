@@ -40,7 +40,7 @@
     /* MAIN SECTION */
 
     main {
-        padding: 40px;
+        padding: 20px;
     }
 
     .description {
@@ -53,7 +53,6 @@
 /* AFTER THIS WILL TRANSTIONS TO MOBILE PORTRAIT LAYOUT */
 
 @media (max-width: 920px) {
-    /* THE LOGO IS NOT CENTERED YET, FIX THIS LATER, NOT IMPORTANT RN */
     
     header {
         overflow-x: hidden;
@@ -161,10 +160,6 @@
     }
 
     /* MAIN SECTION HORIZONTAL LAYOUT */
-
-    main {
-        padding: 50px;
-    }
 
     .card {
         flex:0 0 200px;
