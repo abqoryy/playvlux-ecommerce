@@ -223,16 +223,12 @@ nav a:not(.logo) {
 
 main {
     width: 100%;
-
-    padding: 100px;
 }
 
 section {
     width: 100%;
-    display: flex;
-
     gap: 20px;
-    
+    padding: 100px;
 }
 
 .best-seller {
@@ -250,7 +246,7 @@ section {
 }
 
 .description p {
-    max-width: 200px;
+    max-width: 400px;
     
 }
 /* ------------------------------------------------------------------------ */
@@ -325,4 +321,77 @@ section {
 
 /* ---------------------------------------------------------------------------- */
 
-/* STILL LACKING IN LAYOUT CARD */
+/* ARTICLE CONTENT */
+
+.articles {
+    background-color: #f5f5f5;
+    margin-top: 50px;
+   
+    
+}
+
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.article {
+    display: flex;
+    width: 100%;
+}
+
+.article.second {
+    flex-direction: row-reverse;
+}
+
+.article-img {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    /* outline: 1px solid red; */
+}
+
+.article.second .article-img {
+    justify-content: flex-end;
+}
+
+.article-img img {
+    max-height: 450px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.article-description {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end
+    /* outline: 1px solid red; */
+}
+
+.article.second .article-description {
+    justify-content: flex-start;
+}
+
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.article-content p {
+    text-align: justify;
+}
+
+/* FIX ARTICLE */
