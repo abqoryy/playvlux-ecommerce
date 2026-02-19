@@ -247,7 +247,6 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     gap: 10px;
-    padding: 20px;
     
 }
 
@@ -275,7 +274,6 @@ section {
 
 .card-slider {
     display: flex;
-    max-width: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 
@@ -290,9 +288,9 @@ section {
     gap: 20px;
     padding: 10px;
 }
-/* FIX THIS SHIT */
+
 .card {
-    flex:0 0 250px;
+    width: 250px;
     height: 400px;
     display: flex;
     flex-direction: column;

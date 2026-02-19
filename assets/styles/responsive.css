@@ -40,7 +40,7 @@
     /* MAIN SECTION */
 
     main {
-        padding: 20px;
+        padding: 50px;
     }
 
     .description {
@@ -161,8 +161,12 @@
 
     /* MAIN SECTION HORIZONTAL LAYOUT */
 
+    .best-seller {
+        padding-bottom: 30px;
+    }
+
     .card {
-        flex:0 0 200px;
+        width: 200px;
         height: 350px;
         display: flex;
         flex-direction: column;
