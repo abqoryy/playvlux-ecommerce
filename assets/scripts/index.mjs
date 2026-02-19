@@ -1,4 +1,6 @@
-import {toggleMenu, card} from "./home.mjs";
+import {toggleMenu, card, slider} from "./home.mjs";
 
 toggleMenu();
 card();
+slider();
+

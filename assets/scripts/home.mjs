@@ -29,7 +29,22 @@ function card() {
             title: "Low Profile Keyboard",
             desc: "Tipis, ringan, modern",
             img: "assets/img/keyboard.png"
-        }
+        },
+        {
+            title: "Low Profile Keyboard",
+            desc: "Tipis, ringan, modern",
+            img: "assets/img/keyboard.png"
+        },
+        {
+            title: "Low Profile Keyboard",
+            desc: "Tipis, ringan, modern",
+            img: "assets/img/keyboard.png"
+        },
+        {
+            title: "Low Profile Keyboard",
+            desc: "Tipis, ringan, modern",
+            img: "assets/img/keyboard.png"
+        },
     ];
 
 
@@ -54,5 +69,24 @@ function card() {
 
 }
 
+function slider() {
+    
+    const slider = document.querySelector('.card-slider');
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
 
-export {toggleMenu, card};
+    // Scroll behavior
+    nextBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: 320, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+
+
+
+}
+
+
+export {toggleMenu, card, slider};
