@@ -247,7 +247,6 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     gap: 10px;
-    
 }
 
 .description p {
@@ -260,7 +259,6 @@ section {
 .slider-wrapper {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 10px;
 }
@@ -268,8 +266,9 @@ section {
 
 .prev, .next {
     position: relative;
-    font-size: 25px;
+    font-size: 40px;
     background-color: transparent;
+
 }
 
 .card-slider {
@@ -305,6 +304,7 @@ section {
     display: flex;
     justify-content: center;
     border-radius: 25px 25px 0px 0px;
+    padding: 10px;
     /* outline: 1px solid red; */
 }
 
@@ -319,6 +319,8 @@ section {
     gap: 10px;
     padding: 20px;
     background-color: beige;
+    border-radius: 0 0 25px 25px;
+
 }
 
 /* ---------------------------------------------------------------------------- */

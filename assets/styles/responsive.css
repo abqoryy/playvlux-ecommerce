@@ -40,7 +40,7 @@
     /* MAIN SECTION */
 
     main {
-        padding: 50px;
+        padding: 50px 10px;
     }
 
     .description {
@@ -200,6 +200,7 @@
         padding: 7px 15px;
         font-size: 10px;
     }
+
 }
 
 @media (max-width: 450px) {
