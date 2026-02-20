@@ -196,6 +196,17 @@
         justify-content: center;
         text-align: center;
     }
+
+    /* footer */
+
+    footer {
+        padding: 50px 20px;
+    }
+
+    .footer-container {
+        align-items: center;
+        outline: 1px solid red;
+    }
 }
 
 
@@ -229,6 +240,21 @@
     .article-description {
         font-size: 13px;
         padding: 20px;
+    }
+
+    /* footer */
+
+    .footer-container h3 {
+        font-size: 15px;
+    }
+
+    .logo-footer {
+        font-size: 30px;
+    }
+
+    .socmed {
+        font-size: 12px;
+
     }
 }
 
