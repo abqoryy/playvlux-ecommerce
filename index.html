@@ -9,24 +9,11 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
-<body>
+<body class="animated-bg">
     <header class="animated-bg">
-        <nav>
-            <i id="menu-icon" class='bx bx-menu'></i>
-            <a href="#" class="logo logo-menu">PV</a>
-            <div class="nav-list">
-                <a id="home" href="#">Home</a>
-                <a id="product" href="#">Product</a>
-                <a id="article" href="#">Article</a>
-                <a id="cart" href="#">Cart</a>
-                <a id="login-li" href="#">Login</a>
-            </div>
-            <div class="nav-button">
-                <i id="cart-icon" class="bx bx-cart"></i>
-                <button class="login">Login</button>
-                <button class="signup">Sign Up</button>
-            </div>
-        </nav>
+        <div id="navbar" class="navbar">
+            <!-- here will be injected by js for navbar -->
+        </div>
 
         <div class="hero-section">
             <div class="hero-left">
@@ -58,15 +45,10 @@
                     <div class="card-slider">
                         <div class="card-container">
                             <!-- Looping card with JS -->
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="assets/img/keyboard.png" alt="">
-                                </div>
-                                <div class="card-desc">
-                                    <h3>Product Title</h3>
-                                    <p>Product Description</p>
-                                </div>
-                            </div>
+                             <div id="card-component">
+                                <!-- here will be injected by js -->
+                             </div>
+                            
                         </div>
                     </div>
 

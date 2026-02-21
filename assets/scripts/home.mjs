@@ -1,3 +1,21 @@
+function reusable() {
+  return Promise.all([
+    fetch('/components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        const navbar = document.getElementById('navbar');
+        if (navbar) navbar.innerHTML = data;
+      }),
+
+    fetch('/components/card.html')
+      .then(res => res.text())
+      .then(data => {
+        const cardComp = document.getElementById('card-component');
+        if (cardComp) cardComp.innerHTML = data;
+      })
+  ]);
+}
+
 function toggleMenu() {
     const menu = document.querySelector('#menu-icon');
     const navList = document.querySelector('.nav-list');
@@ -10,6 +28,20 @@ function toggleMenu() {
     }
 
     console.log(`this is test`)
+
+    function closeMenu() {
+        menu.classList.remove('bx-x');
+        navList.classList.remove('active');
+        body.classList.remove('no-scroll');
+    }
+
+    const navLink = document.querySelectorAll('.nav-list a');
+
+    navLink[0].addEventListener('click', closeMenu);
+    navLink[1].addEventListener('click', closeMenu);
+    navLink[2].addEventListener('click', closeMenu);
+    navLink[3].addEventListener('click', closeMenu);
+    navLink[4].addEventListener('click', closeMenu);
 }
 
 
@@ -18,32 +50,32 @@ function card() {
         {
             title: "Keyboard Hall Effect",
             desc: "Switch magnetik ultra responsif",
-            img: "assets/img/keyboard.png"
+            img: "/assets/img/keyboard.png"
         },
         {
             title: "Mechanical Keyboard",
             desc: "Tactile feel untuk kerja & gaming",
-            img: "assets/img/keyboard.png"
+            img: "/assets/img/keyboard.png"
         },
         {
             title: "Low Profile Keyboard",
             desc: "Tipis, ringan, modern",
-            img: "assets/img/keyboard.png"
+            img: "/assets/img/keyboard.png"
         },
         {
             title: "Low Profile Keyboard",
             desc: "Tipis, ringan, modern",
-            img: "assets/img/keyboard.png"
+            img: "/assets/img/keyboard.png"
         },
         {
             title: "Low Profile Keyboard",
             desc: "Tipis, ringan, modern",
-            img: "assets/img/keyboard.png"
+            img: "/assets/img/keyboard.png"
         },
         {
             title: "Low Profile Keyboard",
             desc: "Tipis, ringan, modern",
-            img: "assets/img/keyboard.png"
+            img: "/assets/img/keyboard.png"
         },
     ];
 
@@ -89,4 +121,4 @@ function slider() {
 }
 
 
-export {toggleMenu, card, slider};
+export {reusable, toggleMenu, card, slider};

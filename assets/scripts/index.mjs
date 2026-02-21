@@ -1,6 +1,8 @@
-import {toggleMenu, card, slider} from "./home.mjs";
+import {reusable, toggleMenu, card, slider} from "./home.mjs";
 
-toggleMenu();
-card();
-slider();
-
+document.addEventListener('DOMContentLoaded', async () => {
+  await reusable();
+  card();
+  slider();
+  toggleMenu();
+});

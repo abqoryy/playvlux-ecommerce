@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Product</title>
+
+    <style>
+        /* CHANGE INLINE STYLE LATER */
+        /* FIX NAV SIDE BAR BACKGROUND */
+        main {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header">
+        <div id="navbar" class="navbar animated-bg">
+            <!-- here will be injected  by js for navbar -->
+        </div>
+    </header>
+    <main>
+       <div class="slider-wrapper">
+            <button class="prev"><i class='bx bx-chevron-left'></i></button>
+                
+                <div class="card-slider">
+                    <div class="card-container">
+                        <!-- Looping card with JS -->
+                            <div id="card-component">
+                            <!-- here will be injected by js -->
+                            </div>
+                        
+                    </div>
+                </div>
+
+            <button class="next"><i class='bx bx-chevron-right'></i></button>
+        </div>
+    </main>
+    <div id="card-component">
+    <!-- here will be injected by js -->
+    </div>
+    <script type="module" src="/assets/scripts/index.mjs"></script>
+</body>
+</html>
